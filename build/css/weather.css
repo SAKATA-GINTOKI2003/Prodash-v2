@@ -163,11 +163,24 @@ input {
 
 #hourly-forecast {
   margin-top: 50px;
+  /* height:80vh; */
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
+  scrollbar-gutter: none;
 }
+#hourly-forecast::-webkit-scrollbar:hover{
+width: thin;
+border-radius: 8px;
+background-color: transparent;
+display: none;
+scrollbar-gutter: none;
+}
+
+/* #hourly-forecast::-webkit-scrollbar-thumb{
+  display: none;
+} */
 
 .hourly-item {
   flex: 0 0 auto;
@@ -179,6 +192,8 @@ input {
   color: white;
   padding-left:7px;
   padding-right:7px;
+  padding-bottom: 15px;
+
 }
 
 .hourly-item img {
